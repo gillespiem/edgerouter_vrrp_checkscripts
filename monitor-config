@@ -1,0 +1,14 @@
+#!/bin/bash
+# monitor-config
+
+# define the two hosts to monitor
+IP1='8.8.8.8'
+IP2='66.59.109.0'
+
+PPPOE_CONFIGURED=0
+
+HIGH_PRIORITY="250"
+LOW_PRIORITY="5"
+
+
+
