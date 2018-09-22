@@ -6,8 +6,8 @@
 /opt/vyatta/sbin/vyatta-cfg-cmd-wrapper begin
 
 # increase priority
-/opt/vyatta/sbin/vyatta-cfg-cmd-wrapper delete interfaces ethernet eth0 vrrp vrrp-group 66 priority 
-/opt/vyatta/sbin/vyatta-cfg-cmd-wrapper set interfaces ethernet eth0 vrrp vrrp-group 66 priority $HIGH_PRIORITY
+/opt/vyatta/sbin/vyatta-cfg-cmd-wrapper delete interfaces ethernet $VRRP_INTERFACE vrrp vrrp-group 66 priority 
+/opt/vyatta/sbin/vyatta-cfg-cmd-wrapper set interfaces ethernet $VRRP_INTERFACE vrrp vrrp-group 66 priority $HIGH_PRIORITY
 
 # now commit the changes
 /opt/vyatta/sbin/vyatta-cfg-cmd-wrapper commit
